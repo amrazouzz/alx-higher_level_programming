@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 # 2-rectangle.py
-# Brennan D Baraban <375@holbertonschool.com>
+
 """Defines a Rectangle class."""
 
 

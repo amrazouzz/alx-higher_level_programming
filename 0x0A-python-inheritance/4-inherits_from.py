@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 # 4-inherits_from.py
-# Brennan D Baraban <375@holbertonschool.com>
+
 """Defines an inherited class-checking function."""
 
 

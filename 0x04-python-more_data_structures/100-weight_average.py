@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 # 100-weight_average.py
-# Brennan D Baraban <375@holbertonschool.com>
+
 
 
 def weight_average(my_list=[]):

@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 # 7-base_geometry.py
-# Brennan D Baraban <375@holbertonschool.com>
+
 """Defines a base geometry class BaseGeometry."""
 
 
