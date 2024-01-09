@@ -1,31 +1,42 @@
 #!/usr/bin/python3
-# 9-rectangle.py
+"""Defines a class Rectangle based on 8-base_geometry.py.
 
-"""Defines a class Rectangle that inherits from BaseGeometry."""
+Attributes:
+    width (int): width of the rectangle.
+    height (int): height of the rectangle.
+"""
+
+
 BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
 
 class Rectangle(BaseGeometry):
-    """Represent a rectangle using BaseGeometry."""
+    """Class Rectangle"""
 
     def __init__(self, width, height):
-        """Intialize a new Rectangle.
+        """Creates new instances of Rectangle.
 
         Args:
-            width (int): The width of the new Rectangle.
-            height (int): The height of the new Rectangle.
+            width (int): width of rectangle.
+            height (int): height of rectangle.
         """
-        super().integer_validator("width", width)
         self.__width = width
-        super().integer_validator("height", height)
         self.__height = height
+        self.integer_validator("width", width)
+        self.integer_validator("height", height)
 
     def area(self):
-        """Return the area of the rectangle."""
+        """Calculates area of a rectangle.
+
+        Returns:
+            int: area.
+        """
         return self.__width * self.__height
 
     def __str__(self):
-        """Return the print() and str() representation of a Rectangle."""
-        string = "[" + str(self.__class__.__name__) + "] "
-        string += str(self.__width) + "/" + str(self.__height)
-        return string
+        """Returns string representation of the rectangle.
+
+        Returns:
+            str: string representation of rectangle.
+        """
+        return "[Rectangle] {:d}/{:d}".format(self.__width, self.__height)
